@@ -17,7 +17,6 @@ fprintf(1,'******************************************************\n\n')
 
 CTX = rmfield(CTX,'SLo');
 CTX = rmfield(CTX,'MPo');
-CTX = rmfield(CTX,'FEo');
 CTX.SL = rmfield(CTX.SL,'S' );
 
 ContName  =  [CTX.IO.DataDir '/' CTX.IO.RunID '/' CTX.IO.RunID '_cont.mat'];
