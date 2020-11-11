@@ -3,8 +3,7 @@
 clear variables;
     
 % choose parameter space to be tested
-% A = [0,-1,-2,-4,1,2,4];
-A = -1;
+A = [0,-1,-2,-4,1,2,4];
 [TT,SS] = meshgrid(A,A);
 TT = TT(:);  % parameter vector for tectonic stress number
 SS = SS(:);  % parameter vector for volume source number
@@ -20,7 +19,7 @@ for i = 1:length(TT)
     CTX.IO.nwrite     =  50;
     
     % choose number of elements per grid axis
-    N                 =  100;
+    N                 =  400;
 
     % set run identifier and create directory to store output files (see README
     % file for full list of runIDs for all preset parameter tests
